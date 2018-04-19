@@ -1,0 +1,20 @@
+C:\Users\nolik\source\repos\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.Form1.resources
+C:\Users\nolik\source\repos\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.Properties.Resources.resources
+C:\Users\nolik\source\repos\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.csproj.GenerateResource.cache
+C:\Users\nolik\source\repos\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.csproj.CoreCompileInputs.cache
+C:\Users\nolik\source\repos\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.csprojResolveAssemblyReference.cache
+C:\Users\nolik\source\repos\CustomBalancer\CustomBalancer\bin\Release\LoL Custom Games Balancer.exe.config
+C:\Users\nolik\source\repos\CustomBalancer\CustomBalancer\bin\Release\LoL Custom Games Balancer.exe
+C:\Users\nolik\source\repos\CustomBalancer\CustomBalancer\bin\Release\LoL Custom Games Balancer.pdb
+C:\Users\nolik\source\repos\CustomBalancer\CustomBalancer\obj\Release\LoL Custom Games Balancer.exe
+C:\Users\nolik\source\repos\CustomBalancer\CustomBalancer\obj\Release\LoL Custom Games Balancer.pdb
+C:\Users\Всеволод\source\repos\CustomBalancer\CustomBalancer\bin\Release\LoL Custom Games Balancer.exe.config
+C:\Users\Всеволод\source\repos\CustomBalancer\CustomBalancer\bin\Release\LoL Custom Games Balancer.exe
+C:\Users\Всеволод\source\repos\CustomBalancer\CustomBalancer\bin\Release\LoL Custom Games Balancer.pdb
+C:\Users\Всеволод\source\repos\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.csprojResolveAssemblyReference.cache
+C:\Users\Всеволод\source\repos\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.Form1.resources
+C:\Users\Всеволод\source\repos\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.Properties.Resources.resources
+C:\Users\Всеволод\source\repos\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.csproj.GenerateResource.Cache
+C:\Users\Всеволод\source\repos\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.csproj.CoreCompileInputs.cache
+C:\Users\Всеволод\source\repos\CustomBalancer\CustomBalancer\obj\Release\LoL Custom Games Balancer.exe
+C:\Users\Всеволод\source\repos\CustomBalancer\CustomBalancer\obj\Release\LoL Custom Games Balancer.pdb
