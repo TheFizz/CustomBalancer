@@ -50,7 +50,7 @@ namespace CustomBalancer
             { nickname = node.InnerText; }
             catch
             {
-                node = doc.DocumentNode.SelectSingleNode("/html/body/div[1]/div[3]/div/div/div[1]/div[2]/div[1]/span");
+                node = doc.DocumentNode.SelectSingleNode("/html/body/div[1]/div[4]/div/div/div[1]/div[3]/div[1]/span");
                 try
                 { nickname = node.InnerText; }
                 catch { MessageBox.Show("Invalid summoner name, server or not existing on OP.GG", "ERROR!"); return null; };
@@ -64,6 +64,7 @@ namespace CustomBalancer
             {
 
                 node = doc.DocumentNode.SelectSingleNode("//*[@id='SummonerLayoutContent']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/span");
+
                 try
                 { rank = node.InnerText; }
                 catch { MessageBox.Show("Invalid summoner name, server or not existing on OP.GG", "ERROR!"); return null; };

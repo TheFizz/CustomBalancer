@@ -18,3 +18,12 @@ C:\Users\Всеволод\source\repos\CustomBalancer\CustomBalancer\obj\Release
 C:\Users\Всеволод\source\repos\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.csproj.CoreCompileInputs.cache
 C:\Users\Всеволод\source\repos\CustomBalancer\CustomBalancer\obj\Release\LoL Custom Games Balancer.exe
 C:\Users\Всеволод\source\repos\CustomBalancer\CustomBalancer\obj\Release\LoL Custom Games Balancer.pdb
+D:\Prog\SELF\Balancer\CustomBalancer\bin\Release\LoL Custom Games Balancer.exe.config
+D:\Prog\SELF\Balancer\CustomBalancer\bin\Release\LoL Custom Games Balancer.exe
+D:\Prog\SELF\Balancer\CustomBalancer\bin\Release\LoL Custom Games Balancer.pdb
+D:\Prog\SELF\Balancer\CustomBalancer\obj\Release\CustomBalancer.Form1.resources
+D:\Prog\SELF\Balancer\CustomBalancer\obj\Release\CustomBalancer.Properties.Resources.resources
+D:\Prog\SELF\Balancer\CustomBalancer\obj\Release\CustomBalancer.csproj.GenerateResource.cache
+D:\Prog\SELF\Balancer\CustomBalancer\obj\Release\CustomBalancer.csproj.CoreCompileInputs.cache
+D:\Prog\SELF\Balancer\CustomBalancer\obj\Release\LoL Custom Games Balancer.exe
+D:\Prog\SELF\Balancer\CustomBalancer\obj\Release\LoL Custom Games Balancer.pdb
