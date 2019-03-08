@@ -1,0 +1,56 @@
+using System;
+using HtmlAgilityPack;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Net;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+					
+public class Program
+{
+	public static void Main()
+	{
+        WebClient wc = new WebClient();
+		   HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
+		wc.Encoding = Encoding.UTF8;
+            string nickname = null;
+            string rank = null;
+            int mmr = 0;
+            string link = "http://euw.op.gg/summoner/userName=Smersh Bartimeus";
+            string htmlCode = wc.DownloadString(link);
+            doc.LoadHtml(htmlCode);
+            HtmlNode node = doc.DocumentNode.SelectSingleNode("/html/body/div[1]/div[3]/div/div/div[1]/div[3]/div[1]/span");
+
+            try
+            { nickname = node.InnerText; }
+            catch
+            {
+                node = doc.DocumentNode.SelectSingleNode("/html/body/div[1]/div[4]/div/div/div[1]/div[3]/div[1]/span");
+                try
+                { nickname = node.InnerText; }
+                catch { Console.WriteLine("Invalid summoner name, server or not existing on OP.GG1", "ERROR1!");};
+            }
+
+            node = doc.DocumentNode.SelectSingleNode("//*[@id='SummonerLayoutContent']/div[1]/div[1]/div[1]/div/div[2]/div/span");
+
+            try
+            { rank = node.InnerText; }
+            catch
+            {
+
+                node = doc.DocumentNode.SelectSingleNode("//*[@id='SummonerLayoutContent']/div[2]/div[1]/div[1]/div/div[2]/div[2]");
+                try
+                { rank = node.InnerText; }
+                catch { Console.WriteLine("Invalid summoner name, server or not existing on OP.GG2", "ERROR2!");};
+            }
+            Console.WriteLine(rank);
+
+            Console.WriteLine(nickname);
+	}
+}
