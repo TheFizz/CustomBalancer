@@ -512,9 +512,9 @@
             // 
             this.idornpic.Image = global::CustomBalancer.Properties.Resources.iDorn;
             this.idornpic.InitialImage = null;
-            this.idornpic.Location = new System.Drawing.Point(194, 28);
+            this.idornpic.Location = new System.Drawing.Point(282, 42);
             this.idornpic.Name = "idornpic";
-            this.idornpic.Size = new System.Drawing.Size(526, 303);
+            this.idornpic.Size = new System.Drawing.Size(529, 303);
             this.idornpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.idornpic.TabIndex = 10;
             this.idornpic.TabStop = false;
@@ -523,7 +523,7 @@
             // 
             this.idorntext.Font = new System.Drawing.Font("Palatino Linotype", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.idorntext.ForeColor = System.Drawing.Color.DarkOrange;
-            this.idorntext.Location = new System.Drawing.Point(194, 319);
+            this.idorntext.Location = new System.Drawing.Point(283, 339);
             this.idorntext.Name = "idorntext";
             this.idorntext.Size = new System.Drawing.Size(526, 50);
             this.idorntext.TabIndex = 11;
