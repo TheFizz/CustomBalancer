@@ -547,7 +547,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoL Custom Games Balancer - iDorn Customs Special";
+            this.Text = "LoL Custom Games Balancer - iDorn Customs Special v1.01b";
             this.gPP.ResumeLayout(false);
             this.gPP.PerformLayout();
             this.gT1.ResumeLayout(false);
