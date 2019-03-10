@@ -39,9 +39,14 @@
             this.srvBox = new System.Windows.Forms.ComboBox();
             this.bBalance = new System.Windows.Forms.Button();
             this.gT1 = new System.Windows.Forms.GroupBox();
+            this.proft1p0 = new System.Windows.Forms.PictureBox();
             this.elot1p4 = new System.Windows.Forms.PictureBox();
+            this.proft1p1 = new System.Windows.Forms.PictureBox();
             this.elot1p3 = new System.Windows.Forms.PictureBox();
+            this.proft1p2 = new System.Windows.Forms.PictureBox();
+            this.proft1p3 = new System.Windows.Forms.PictureBox();
             this.elot1p2 = new System.Windows.Forms.PictureBox();
+            this.proft1p4 = new System.Windows.Forms.PictureBox();
             this.elot1p1 = new System.Windows.Forms.PictureBox();
             this.elot1p0 = new System.Windows.Forms.PictureBox();
             this.t1p4 = new System.Windows.Forms.Label();
@@ -50,6 +55,11 @@
             this.t1p1 = new System.Windows.Forms.Label();
             this.t1p0 = new System.Windows.Forms.Label();
             this.gT2 = new System.Windows.Forms.GroupBox();
+            this.proft2p0 = new System.Windows.Forms.PictureBox();
+            this.proft2p1 = new System.Windows.Forms.PictureBox();
+            this.proft2p2 = new System.Windows.Forms.PictureBox();
+            this.proft2p3 = new System.Windows.Forms.PictureBox();
+            this.proft2p4 = new System.Windows.Forms.PictureBox();
             this.elot2p4 = new System.Windows.Forms.PictureBox();
             this.t2p4 = new System.Windows.Forms.Label();
             this.elot2p3 = new System.Windows.Forms.PictureBox();
@@ -64,12 +74,22 @@
             this.idorntext = new System.Windows.Forms.Label();
             this.gPP.SuspendLayout();
             this.gT1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot1p4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot1p3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot1p2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot1p1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot1p0)).BeginInit();
             this.gT2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.proft2p0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft2p1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft2p2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft2p3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft2p4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot2p4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot2p3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot2p2)).BeginInit();
@@ -176,9 +196,14 @@
             // 
             // gT1
             // 
+            this.gT1.Controls.Add(this.proft1p0);
             this.gT1.Controls.Add(this.elot1p4);
+            this.gT1.Controls.Add(this.proft1p1);
             this.gT1.Controls.Add(this.elot1p3);
+            this.gT1.Controls.Add(this.proft1p2);
+            this.gT1.Controls.Add(this.proft1p3);
             this.gT1.Controls.Add(this.elot1p2);
+            this.gT1.Controls.Add(this.proft1p4);
             this.gT1.Controls.Add(this.elot1p1);
             this.gT1.Controls.Add(this.elot1p0);
             this.gT1.Controls.Add(this.t1p4);
@@ -188,39 +213,79 @@
             this.gT1.Controls.Add(this.t1p0);
             this.gT1.Location = new System.Drawing.Point(194, 12);
             this.gT1.Name = "gT1";
-            this.gT1.Size = new System.Drawing.Size(260, 381);
+            this.gT1.Size = new System.Drawing.Size(350, 381);
             this.gT1.TabIndex = 7;
             this.gT1.TabStop = false;
             this.gT1.Text = "Team 1";
             this.gT1.Visible = false;
             // 
+            // proft1p0
+            // 
+            this.proft1p0.Location = new System.Drawing.Point(210, 17);
+            this.proft1p0.Name = "proft1p0";
+            this.proft1p0.Size = new System.Drawing.Size(64, 64);
+            this.proft1p0.TabIndex = 24;
+            this.proft1p0.TabStop = false;
+            // 
             // elot1p4
             // 
-            this.elot1p4.Location = new System.Drawing.Point(190, 296);
+            this.elot1p4.Location = new System.Drawing.Point(280, 297);
             this.elot1p4.Name = "elot1p4";
             this.elot1p4.Size = new System.Drawing.Size(64, 64);
             this.elot1p4.TabIndex = 9;
             this.elot1p4.TabStop = false;
             // 
+            // proft1p1
+            // 
+            this.proft1p1.Location = new System.Drawing.Point(210, 87);
+            this.proft1p1.Name = "proft1p1";
+            this.proft1p1.Size = new System.Drawing.Size(64, 64);
+            this.proft1p1.TabIndex = 23;
+            this.proft1p1.TabStop = false;
+            // 
             // elot1p3
             // 
-            this.elot1p3.Location = new System.Drawing.Point(190, 226);
+            this.elot1p3.Location = new System.Drawing.Point(280, 227);
             this.elot1p3.Name = "elot1p3";
             this.elot1p3.Size = new System.Drawing.Size(64, 64);
             this.elot1p3.TabIndex = 8;
             this.elot1p3.TabStop = false;
             // 
+            // proft1p2
+            // 
+            this.proft1p2.Location = new System.Drawing.Point(210, 157);
+            this.proft1p2.Name = "proft1p2";
+            this.proft1p2.Size = new System.Drawing.Size(64, 64);
+            this.proft1p2.TabIndex = 22;
+            this.proft1p2.TabStop = false;
+            // 
+            // proft1p3
+            // 
+            this.proft1p3.Location = new System.Drawing.Point(210, 227);
+            this.proft1p3.Name = "proft1p3";
+            this.proft1p3.Size = new System.Drawing.Size(64, 64);
+            this.proft1p3.TabIndex = 21;
+            this.proft1p3.TabStop = false;
+            // 
             // elot1p2
             // 
-            this.elot1p2.Location = new System.Drawing.Point(190, 156);
+            this.elot1p2.Location = new System.Drawing.Point(280, 157);
             this.elot1p2.Name = "elot1p2";
             this.elot1p2.Size = new System.Drawing.Size(64, 64);
             this.elot1p2.TabIndex = 7;
             this.elot1p2.TabStop = false;
             // 
+            // proft1p4
+            // 
+            this.proft1p4.Location = new System.Drawing.Point(210, 297);
+            this.proft1p4.Name = "proft1p4";
+            this.proft1p4.Size = new System.Drawing.Size(64, 64);
+            this.proft1p4.TabIndex = 20;
+            this.proft1p4.TabStop = false;
+            // 
             // elot1p1
             // 
-            this.elot1p1.Location = new System.Drawing.Point(190, 86);
+            this.elot1p1.Location = new System.Drawing.Point(280, 87);
             this.elot1p1.Name = "elot1p1";
             this.elot1p1.Size = new System.Drawing.Size(64, 64);
             this.elot1p1.TabIndex = 6;
@@ -228,7 +293,7 @@
             // 
             // elot1p0
             // 
-            this.elot1p0.Location = new System.Drawing.Point(190, 16);
+            this.elot1p0.Location = new System.Drawing.Point(280, 17);
             this.elot1p0.Name = "elot1p0";
             this.elot1p0.Size = new System.Drawing.Size(64, 64);
             this.elot1p0.TabIndex = 5;
@@ -239,7 +304,7 @@
             this.t1p4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.t1p4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.t1p4.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.t1p4.Location = new System.Drawing.Point(6, 296);
+            this.t1p4.Location = new System.Drawing.Point(26, 297);
             this.t1p4.Name = "t1p4";
             this.t1p4.Size = new System.Drawing.Size(178, 64);
             this.t1p4.TabIndex = 4;
@@ -250,7 +315,7 @@
             this.t1p3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.t1p3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.t1p3.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.t1p3.Location = new System.Drawing.Point(6, 226);
+            this.t1p3.Location = new System.Drawing.Point(26, 224);
             this.t1p3.Name = "t1p3";
             this.t1p3.Size = new System.Drawing.Size(178, 64);
             this.t1p3.TabIndex = 3;
@@ -261,7 +326,7 @@
             this.t1p2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.t1p2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.t1p2.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.t1p2.Location = new System.Drawing.Point(6, 156);
+            this.t1p2.Location = new System.Drawing.Point(26, 157);
             this.t1p2.Name = "t1p2";
             this.t1p2.Size = new System.Drawing.Size(178, 64);
             this.t1p2.TabIndex = 2;
@@ -272,7 +337,7 @@
             this.t1p1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.t1p1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.t1p1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.t1p1.Location = new System.Drawing.Point(6, 86);
+            this.t1p1.Location = new System.Drawing.Point(26, 87);
             this.t1p1.Name = "t1p1";
             this.t1p1.Size = new System.Drawing.Size(178, 64);
             this.t1p1.TabIndex = 1;
@@ -282,7 +347,7 @@
             // 
             this.t1p0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.t1p0.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t1p0.Location = new System.Drawing.Point(6, 16);
+            this.t1p0.Location = new System.Drawing.Point(26, 16);
             this.t1p0.Name = "t1p0";
             this.t1p0.Size = new System.Drawing.Size(178, 64);
             this.t1p0.TabIndex = 0;
@@ -290,6 +355,11 @@
             // 
             // gT2
             // 
+            this.gT2.Controls.Add(this.proft2p0);
+            this.gT2.Controls.Add(this.proft2p1);
+            this.gT2.Controls.Add(this.proft2p2);
+            this.gT2.Controls.Add(this.proft2p3);
+            this.gT2.Controls.Add(this.proft2p4);
             this.gT2.Controls.Add(this.elot2p4);
             this.gT2.Controls.Add(this.t2p4);
             this.gT2.Controls.Add(this.elot2p3);
@@ -300,13 +370,53 @@
             this.gT2.Controls.Add(this.elot2p0);
             this.gT2.Controls.Add(this.t2p1);
             this.gT2.Controls.Add(this.t2p0);
-            this.gT2.Location = new System.Drawing.Point(460, 12);
+            this.gT2.Location = new System.Drawing.Point(550, 13);
             this.gT2.Name = "gT2";
-            this.gT2.Size = new System.Drawing.Size(260, 381);
+            this.gT2.Size = new System.Drawing.Size(350, 381);
             this.gT2.TabIndex = 8;
             this.gT2.TabStop = false;
             this.gT2.Text = "Team 2";
             this.gT2.Visible = false;
+            // 
+            // proft2p0
+            // 
+            this.proft2p0.Location = new System.Drawing.Point(76, 16);
+            this.proft2p0.Name = "proft2p0";
+            this.proft2p0.Size = new System.Drawing.Size(64, 64);
+            this.proft2p0.TabIndex = 19;
+            this.proft2p0.TabStop = false;
+            // 
+            // proft2p1
+            // 
+            this.proft2p1.Location = new System.Drawing.Point(76, 86);
+            this.proft2p1.Name = "proft2p1";
+            this.proft2p1.Size = new System.Drawing.Size(64, 64);
+            this.proft2p1.TabIndex = 18;
+            this.proft2p1.TabStop = false;
+            // 
+            // proft2p2
+            // 
+            this.proft2p2.Location = new System.Drawing.Point(76, 156);
+            this.proft2p2.Name = "proft2p2";
+            this.proft2p2.Size = new System.Drawing.Size(64, 64);
+            this.proft2p2.TabIndex = 17;
+            this.proft2p2.TabStop = false;
+            // 
+            // proft2p3
+            // 
+            this.proft2p3.Location = new System.Drawing.Point(76, 226);
+            this.proft2p3.Name = "proft2p3";
+            this.proft2p3.Size = new System.Drawing.Size(64, 64);
+            this.proft2p3.TabIndex = 16;
+            this.proft2p3.TabStop = false;
+            // 
+            // proft2p4
+            // 
+            this.proft2p4.Location = new System.Drawing.Point(76, 296);
+            this.proft2p4.Name = "proft2p4";
+            this.proft2p4.Size = new System.Drawing.Size(64, 64);
+            this.proft2p4.TabIndex = 15;
+            this.proft2p4.TabStop = false;
             // 
             // elot2p4
             // 
@@ -320,7 +430,7 @@
             // 
             this.t2p4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.t2p4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.t2p4.Location = new System.Drawing.Point(76, 296);
+            this.t2p4.Location = new System.Drawing.Point(146, 296);
             this.t2p4.Name = "t2p4";
             this.t2p4.Size = new System.Drawing.Size(178, 64);
             this.t2p4.TabIndex = 9;
@@ -338,7 +448,7 @@
             // 
             this.t2p3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.t2p3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.t2p3.Location = new System.Drawing.Point(76, 226);
+            this.t2p3.Location = new System.Drawing.Point(146, 226);
             this.t2p3.Name = "t2p3";
             this.t2p3.Size = new System.Drawing.Size(178, 64);
             this.t2p3.TabIndex = 8;
@@ -364,7 +474,7 @@
             // 
             this.t2p2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.t2p2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.t2p2.Location = new System.Drawing.Point(76, 156);
+            this.t2p2.Location = new System.Drawing.Point(146, 162);
             this.t2p2.Name = "t2p2";
             this.t2p2.Size = new System.Drawing.Size(178, 64);
             this.t2p2.TabIndex = 7;
@@ -382,7 +492,7 @@
             // 
             this.t2p1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.t2p1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.t2p1.Location = new System.Drawing.Point(76, 86);
+            this.t2p1.Location = new System.Drawing.Point(146, 89);
             this.t2p1.Name = "t2p1";
             this.t2p1.Size = new System.Drawing.Size(178, 64);
             this.t2p1.TabIndex = 6;
@@ -392,7 +502,7 @@
             // 
             this.t2p0.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.t2p0.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.t2p0.Location = new System.Drawing.Point(76, 15);
+            this.t2p0.Location = new System.Drawing.Point(146, 15);
             this.t2p0.Name = "t2p0";
             this.t2p0.Size = new System.Drawing.Size(178, 65);
             this.t2p0.TabIndex = 5;
@@ -425,7 +535,7 @@
             this.AcceptButton = this.bAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(732, 399);
+            this.ClientSize = new System.Drawing.Size(909, 399);
             this.Controls.Add(this.gT2);
             this.Controls.Add(this.gT1);
             this.Controls.Add(this.idornpic);
@@ -441,12 +551,22 @@
             this.gPP.ResumeLayout(false);
             this.gPP.PerformLayout();
             this.gT1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot1p4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot1p3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot1p2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot1p1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot1p0)).EndInit();
             this.gT2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.proft2p0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft2p1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft2p2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft2p3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft2p4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot2p4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot2p3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot2p2)).EndInit();
@@ -492,6 +612,16 @@
         private System.Windows.Forms.Button bOPGG;
         private System.Windows.Forms.PictureBox idornpic;
         private System.Windows.Forms.Label idorntext;
+        private System.Windows.Forms.PictureBox proft2p0;
+        private System.Windows.Forms.PictureBox proft2p1;
+        private System.Windows.Forms.PictureBox proft2p2;
+        private System.Windows.Forms.PictureBox proft2p3;
+        private System.Windows.Forms.PictureBox proft2p4;
+        private System.Windows.Forms.PictureBox proft1p0;
+        private System.Windows.Forms.PictureBox proft1p1;
+        private System.Windows.Forms.PictureBox proft1p2;
+        private System.Windows.Forms.PictureBox proft1p3;
+        private System.Windows.Forms.PictureBox proft1p4;
     }
 }
 

@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,7 +20,6 @@ namespace CustomBalancer
         ArrayList t1 = new ArrayList();
         ArrayList t2 = new ArrayList();
         WebClient wc = new WebClient();
-        string[] Loyals = { "hikky", "thefizz", "omelamustdie", "cptjokesparrow", "dadyoshi", "wellmeal","ионийский зенд" };
         HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
 
         public Form1()
@@ -42,90 +42,175 @@ namespace CustomBalancer
             int mmr = 0;
             string srv = srvBox.SelectedValue.ToString();
             string link = "http://" + srv + ".op.gg/summoner/userName=" + name;
+            string profilepic="";
             string htmlCode = wc.DownloadString(link);
             doc.LoadHtml(htmlCode);
-            HtmlNode node = doc.DocumentNode.SelectSingleNode("/html/body/div[1]/div[3]/div/div/div[1]/div[3]/div[1]/span");
+            HtmlNode node = doc.DocumentNode.SelectSingleNode("/html/body/div[1]/div[4]/div/div/div[1]/div[3]/div[1]/span");
 
             try
             { nickname = node.InnerText; }
             catch
             {
-                node = doc.DocumentNode.SelectSingleNode("/html/body/div[1]/div[4]/div/div/div[1]/div[3]/div[1]/span");
+                node = doc.DocumentNode.SelectSingleNode("/html/body/div[1]/div[4]/div/div/div[1]/div[2]/div[1]/span");
                 try
                 { nickname = node.InnerText; }
-                catch { MessageBox.Show("Invalid summoner name, server or not existing on OP.GG", "ERROR!"); return null; };
+                catch { MessageBox.Show("Invalid summoner name, server or not existing on OP.GG1", "ERROR!"); return null; };
             }
 
-            node = doc.DocumentNode.SelectSingleNode("//*[@id='SummonerLayoutContent']/div[1]/div[1]/div[1]/div/div[2]/div/span");
+            node = doc.DocumentNode.SelectSingleNode("//*[@id='SummonerLayoutContent']/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]");
 
             try
             { rank = node.InnerText; }
             catch
             {
-
-                node = doc.DocumentNode.SelectSingleNode("//*[@id='SummonerLayoutContent']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/span");
+                node = doc.DocumentNode.SelectSingleNode("//*[@id='SummonerLayoutContent']/div[2]/div[1]/div[1]/div/div[2]/div[2]");
 
                 try
                 { rank = node.InnerText; }
-                catch { MessageBox.Show("Invalid summoner name, server or not existing on OP.GG", "ERROR!"); return null; };
+                catch { MessageBox.Show("Invalid summoner name, server or not existing on OP.GG2", "ERROR!"); return null; };
             }
-            mmr = RankToELO(rank);
 
-            return new Player(nickname, rank, mmr, link);
+            node = doc.DocumentNode.SelectSingleNode("/html/body/div[1]/div[4]/div/div/div[1]/div[2]/div/img");
+
+            try
+            { profilepic = node.OuterHtml; }
+            catch
+            {
+                node = doc.DocumentNode.SelectSingleNode("/html/body/div[1]/div[4]/div/div/div[1]/div[1]/div/img");
+
+                try
+                { profilepic = node.OuterHtml; }
+                catch { MessageBox.Show("Invalid summoner name, server or not existing on OP.GG3", "ERROR!"); return null; };
+            }
+
+            profilepic = profilepic.Substring(profilepic.IndexOf('"')+1);
+            profilepic = profilepic.Split('"')[0];
+            profilepic = "https:" + profilepic;
+            if (!rank.Contains("Unranked"))
+            {
+                mmr = RankToELO(rank);
+                node = doc.DocumentNode.SelectSingleNode("//*[@id='SummonerLayoutContent']/div[2]/div[1]/div[1]/div/div[2]/div[3]/span[1]");
+                string LP = node.InnerText.Replace(" LP", "");
+                mmr += Convert.ToInt32(LP);
+            }
+            else
+            {
+                rank = "Unranked";
+                mmr = RankToELO(rank);
+            }
+            return new Player(nickname, rank, mmr, link,profilepic);
         }
         public int RankToELO(string rank)
         {
-            int mmr = 0;
+            rank = rank.ToLower();
             int mult = 0;
-            int step = 70;
-            int bmult = 6;
-            if (rank.Contains("Bronze"))
+            if (rank.Contains("iron"))
             {
-                mmr = 900;
                 mult = (int)Char.GetNumericValue(rank[rank.Length - 1]);
-
-                return (mmr + (step * (bmult - mult))) - 1;
+                switch (mult)
+                {
+                    case 1:
+                        return 300;
+                    case 2:
+                        return 200;
+                    case 3:
+                        return 100;
+                    case 4:
+                        return 0;
+                }
             }
-            else if (rank.Contains("Silver"))
+            if (rank.Contains("bronze"))
             {
-                mmr = 1150;
                 mult = (int)Char.GetNumericValue(rank[rank.Length - 1]);
-                return (mmr + (step * (bmult - mult))) - 1;
+                switch (mult)
+                {
+                    case 1:
+                        return 700;
+                    case 2:
+                        return 600;
+                    case 3:
+                        return 500;
+                    case 4:
+                        return 400;
+                }
             }
-            else if (rank.Contains("Gold"))
+            else if (rank.Contains("silver"))
             {
-                mmr = 1500;
                 mult = (int)Char.GetNumericValue(rank[rank.Length - 1]);
-                return (mmr + (step * (bmult - mult))) - 1;
+                switch (mult)
+                {
+                    case 1:
+                        return 1100;
+                    case 2:
+                        return 1000;
+                    case 3:
+                        return 900;
+                    case 4:
+                        return 800;
+                }
             }
-            else if (rank.Contains("Platinum"))
+            else if (rank.Contains("gold"))
             {
-                mmr = 1850;
                 mult = (int)Char.GetNumericValue(rank[rank.Length - 1]);
-                return (mmr + (step * (bmult - mult))) - 1;
+                switch (mult)
+                {
+                    case 1:
+                        return 1500;
+                    case 2:
+                        return 1400;
+                    case 3:
+                        return 1300;
+                    case 4:
+                        return 1200;
+                }
             }
-            else if (rank.Contains("Diamond"))
+            else if (rank.Contains("platinum"))
             {
-                mmr = 2200;
                 mult = (int)Char.GetNumericValue(rank[rank.Length - 1]);
-                return (mmr + (step * (bmult - mult))) - 1;
+                switch (mult)
+                {
+                    case 1:
+                        return 1900;
+                    case 2:
+                        return 1800;
+                    case 3:
+                        return 1700;
+                    case 4:
+                        return 1600;
+                }
             }
-            else if (rank.Contains("Master"))
+            else if (rank.Contains("diamond"))
             {
-                mmr = 2700;
-                return mmr;
+                mult = (int)Char.GetNumericValue(rank[rank.Length - 1]);
+                switch (mult)
+                {
+                    case 1:
+                        return 2300;
+                    case 2:
+                        return 2200;
+                    case 3:
+                        return 2100;
+                    case 4:
+                        return 2000;
+                }
             }
-            else if (rank.Contains("Challenger"))
+            else if (rank.Contains("master"))
             {
-                mmr = 3000;
-                return mmr;
+                if (rank.Contains("grand"))
+                {
+                    return 2500;
+                }
+                else
+                    return 2400;
             }
-            else if (rank.Contains("Unranked"))
+            else if (rank.Contains("challenger"))
             {
-                mmr = 1360;
-                return mmr;
+                return 2600;
             }
-
+            else if (rank.Contains("unranked"))
+            {
+                return 1050;
+            }
 
             return 0;
         }
@@ -149,7 +234,7 @@ namespace CustomBalancer
             int tcnt1 = 0, tcnt2 = 0;
             for (int i = 9; i >= 0; i--)
             {
-                if (sum1 <= sum2 || sum2 >= halfSum)
+                if (sum1 <= sum2 || sum2 >= halfSum || tcnt2==5)
                 {
                     team1[tcnt1] = pool[i];
                     sum1 += pool[i];
@@ -170,7 +255,8 @@ namespace CustomBalancer
                     if (team1[i] == p.mmr && p.team == 0)
                     {
                         t1.Add(p);
-                        Players[j] = new Player(p.name, p.rank, p.mmr, 1,p.link);
+                        p.team = 1;
+                        Players[j] = p;
                         break;
                     }
                 }
@@ -183,7 +269,8 @@ namespace CustomBalancer
                     if (team2[i] == p.mmr && p.team == 0)
                     {
                         t2.Add(p);
-                        Players[j] = new Player(p.name, p.rank, p.mmr, 2,p.link);
+                        p.team = 2;
+                        Players[j] = p;
                         break;
                     }
                 }
@@ -197,21 +284,16 @@ namespace CustomBalancer
             {
                 if (c is Label)
                 {
-                    p = (Player)t1[(Int32)Char.GetNumericValue(c.Name,c.Name.Length-1)];
+                    p = (Player)t1[(Int32)Char.GetNumericValue(c.Name, c.Name.Length - 1)];
                     c.Text = p.name + "\n" + p.rank;
                     PictureBox pb = (PictureBox)gT1.Controls.Find("elot1p" + c.Name[c.Name.Length - 1], false)[0];
+                    PictureBox pbp = (PictureBox)gT1.Controls.Find("proft1p" + c.Name[c.Name.Length - 1], false)[0];
                     pb.ImageLocation = GetImgSource(p.rank);
+                    pbp.ImageLocation = p.profilepic;
                     pb.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pbp.SizeMode = PictureBoxSizeMode.StretchImage;
                     gT1.Controls.Find("elot1p" + c.Name[c.Name.Length - 1], false)[0] = (Control)pb;
-                    if (Loyals.Contains(p.name.ToLower()))
-                    {
-                        c.ForeColor = Color.OrangeRed;
-                        string s = "🌟"+c.Text;
-                        s = s.Replace("\n", "🌟\n");
-                        c.Text = s;
-                    }
-                    else
-                        c.ForeColor = SystemColors.ControlText;
+                    gT1.Controls.Find("proft1p" + c.Name[c.Name.Length - 1], false)[0] = (Control)pbp;
                 }
             }
 
@@ -222,18 +304,13 @@ namespace CustomBalancer
                     p = (Player)t2[(Int32)Char.GetNumericValue(c.Name, c.Name.Length - 1)];
                     c.Text = p.name + "\n" + p.rank;
                     PictureBox pb = (PictureBox)gT2.Controls.Find("elot2p" + c.Name[c.Name.Length - 1], false)[0];
+                    PictureBox pbp = (PictureBox)gT2.Controls.Find("proft2p" + c.Name[c.Name.Length - 1], false)[0];
                     pb.ImageLocation = GetImgSource(p.rank);
+                    pbp.ImageLocation = p.profilepic;
                     pb.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pbp.SizeMode = PictureBoxSizeMode.StretchImage;
                     gT2.Controls.Find("elot2p" + c.Name[c.Name.Length - 1], false)[0] = (Control)pb;
-                    if (Loyals.Contains(p.name.ToLower()))
-                    {
-                        c.ForeColor = Color.OrangeRed;
-                        string s = "🌟" + c.Text;
-                        s = s.Replace("\n", "🌟\n");
-                        c.Text = s;
-                    }
-                    else
-                        c.ForeColor = SystemColors.ControlText;
+                    gT2.Controls.Find("proft2p" + c.Name[c.Name.Length - 1], false)[0] = (Control)pbp;
                 }
             }
             FlushTeams();
@@ -243,7 +320,8 @@ namespace CustomBalancer
             for (int i = 0; i < Players.Count; i++)
             {
                 Player p = (Player)Players[i];
-                Players[i] = new Player(p.name, p.rank, p.mmr, 0,p.link);
+                p.team = 0;
+                Players[i] = p;
             }
 
             t1.Clear();
@@ -253,13 +331,15 @@ namespace CustomBalancer
         public string GetImgSource(string rank)
         {
             rank = rank.ToLower();
-            if (rank.Contains("ger") || rank.Contains("ter") || rank.Contains("unra"))
+            if (rank.Contains("master") || rank.Contains("challenger") || rank.Contains("unranked"))
             {
-                if (rank.Contains("ger"))
-                    return "http://opgg-static.akamaized.net/images/medals/" + rank.Replace("ger", "ger_1") + ".png";
-                if (rank.Contains("ter"))
-                    return "http://opgg-static.akamaized.net/images/medals/" + rank.Replace("ter", "ter_1") + ".png";
-                if (rank.Contains("unra"))
+                if (rank.Contains("grandmaster"))
+                    return "http://opgg-static.akamaized.net/images/medals/grandmaster_1.png";
+                else if (rank.Contains("master"))
+                    return "http://opgg-static.akamaized.net/images/medals/master_1.png";
+                else if (rank.Contains("challenger"))
+                    return "http://opgg-static.akamaized.net/images/medals/challenger_1.png";
+                else if (rank.Contains("unranked"))
                     return "http://opgg-static.akamaized.net/images/medals/default.png";
             }
             else return "http://opgg-static.akamaized.net/images/medals/" + rank.Replace(" ", "_") + ".png";
@@ -345,7 +425,7 @@ namespace CustomBalancer
                 nameSearch.Enabled = true;
                 bAdd.Enabled = true;
             }
-            if(playersList.SelectedIndex<Players.Count-1)
+            if (playersList.SelectedIndex < Players.Count - 1)
             {
                 playersList.SelectedIndex = Players.Count - 1;
             }
@@ -417,31 +497,23 @@ namespace CustomBalancer
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
-        
     }
     public class Player
     {
         private string _link;
+        private string _profilepic;
         private string _name;
         private string _rank;
         private int _mmr;
         private int _team = 0;
 
-        public Player(string strname, string strrank, int immr, string strlink)
+        public Player(string strname, string strrank, int immr, string strlink, string profilepic)
         {
             this._link = strlink;
+            this._profilepic = profilepic;
             this._name = strname;
             this._rank = strrank;
             this._mmr = immr;
-        }
-        public Player(string strname, string strrank, int immr, int iteam,string strlink)
-        {
-
-            this._link = strlink;
-            this._name = strname;
-            this._rank = strrank;
-            this._mmr = immr;
-            this._team = iteam;
         }
         public string name
         {
@@ -471,6 +543,18 @@ namespace CustomBalancer
                 _link = value;
             }
         }
+        public string profilepic
+        {
+
+            get
+            {
+                return _profilepic;
+            }
+            set
+            {
+                _profilepic = value;
+            }
+        }
         public int mmr
         {
             get
@@ -483,6 +567,10 @@ namespace CustomBalancer
             get
             {
                 return _team;
+            }
+            set
+            {
+                _team = value;
             }
         }
     }
