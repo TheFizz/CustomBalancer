@@ -2,6 +2,8 @@
 
 Version 1.01b:
 
+Download: https://github.com/TheFizz/CustomBalancer/blob/master/LoL%20Custom%20Games%20Balancer%20v1.01b.exe
+
 - Fixed XPATH
 - Updated for S9 leagues
 - LP now is taken to an account when balancing teams
