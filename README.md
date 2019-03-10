@@ -2,7 +2,7 @@
 
 Version 1.01b:
 
-[![Download](https://www.ai-media.tv/wp-content/uploads/2016/08/Download-Button-w-Text.png =96x96)](https://github.com/TheFizz/CustomBalancer/raw/master/LoL%20Custom%20Games%20Balancer%20v1.01b.exe)
+[![Download](https://www.ai-media.tv/wp-content/uploads/2016/08/Download-Button-w-Text.png)](https://github.com/TheFizz/CustomBalancer/raw/master/LoL%20Custom%20Games%20Balancer%20v1.01b.exe)
 
 - Fixed XPATH
 - Updated for S9 leagues
