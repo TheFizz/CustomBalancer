@@ -1,6 +1,7 @@
 # CustomBalancer
 
-Version 1.01b: [![Download](dlbtn.png)](https://github.com/TheFizz/CustomBalancer/raw/master/LoL%20Custom%20Games%20Balancer%20v1.01b.exe)
+Version 1.01b:
+[![Download](dlbtn.png)](https://github.com/TheFizz/CustomBalancer/raw/master/LoL%20Custom%20Games%20Balancer%20v1.01b.exe)
 
 - Fixed XPATH
 - Updated for S9 leagues
