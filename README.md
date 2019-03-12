@@ -1,4 +1,4 @@
-# CustomBalancer
+# League of Legends Custom Games Balancer (a.k.a LCGB)
 
 Version 1.01b:
 
