@@ -63,9 +63,19 @@ namespace CustomBalancer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap iDorn {
+        internal static System.Drawing.Bitmap cam1 {
             get {
-                object obj = ResourceManager.GetObject("iDorn", resourceCulture);
+                object obj = ResourceManager.GetObject("cam1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoL {
+            get {
+                object obj = ResourceManager.GetObject("LoL", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

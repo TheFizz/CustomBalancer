@@ -70,8 +70,9 @@
             this.elot2p0 = new System.Windows.Forms.PictureBox();
             this.t2p1 = new System.Windows.Forms.Label();
             this.t2p0 = new System.Windows.Forms.Label();
-            this.idornpic = new System.Windows.Forms.PictureBox();
             this.idorntext = new System.Windows.Forms.Label();
+            this.bScreen = new System.Windows.Forms.Button();
+            this.idornpic = new System.Windows.Forms.PictureBox();
             this.gPP.SuspendLayout();
             this.gT1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.proft1p0)).BeginInit();
@@ -188,7 +189,7 @@
             this.bBalance.ForeColor = System.Drawing.Color.Black;
             this.bBalance.Location = new System.Drawing.Point(12, 352);
             this.bBalance.Name = "bBalance";
-            this.bBalance.Size = new System.Drawing.Size(172, 42);
+            this.bBalance.Size = new System.Drawing.Size(124, 42);
             this.bBalance.TabIndex = 6;
             this.bBalance.Text = "Balance";
             this.bBalance.UseVisualStyleBackColor = false;
@@ -211,6 +212,7 @@
             this.gT1.Controls.Add(this.t1p2);
             this.gT1.Controls.Add(this.t1p1);
             this.gT1.Controls.Add(this.t1p0);
+            this.gT1.ForeColor = System.Drawing.Color.Black;
             this.gT1.Location = new System.Drawing.Point(194, 12);
             this.gT1.Name = "gT1";
             this.gT1.Size = new System.Drawing.Size(350, 381);
@@ -370,6 +372,7 @@
             this.gT2.Controls.Add(this.elot2p0);
             this.gT2.Controls.Add(this.t2p1);
             this.gT2.Controls.Add(this.t2p0);
+            this.gT2.ForeColor = System.Drawing.Color.Black;
             this.gT2.Location = new System.Drawing.Point(550, 13);
             this.gT2.Name = "gT2";
             this.gT2.Size = new System.Drawing.Size(350, 381);
@@ -508,27 +511,40 @@
             this.t2p0.TabIndex = 5;
             this.t2p0.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // idornpic
-            // 
-            this.idornpic.Image = global::CustomBalancer.Properties.Resources.iDorn;
-            this.idornpic.InitialImage = null;
-            this.idornpic.Location = new System.Drawing.Point(282, 42);
-            this.idornpic.Name = "idornpic";
-            this.idornpic.Size = new System.Drawing.Size(529, 303);
-            this.idornpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.idornpic.TabIndex = 10;
-            this.idornpic.TabStop = false;
-            // 
             // idorntext
             // 
             this.idorntext.Font = new System.Drawing.Font("Palatino Linotype", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.idorntext.ForeColor = System.Drawing.Color.DarkOrange;
-            this.idorntext.Location = new System.Drawing.Point(283, 339);
+            this.idorntext.Location = new System.Drawing.Point(285, 282);
             this.idorntext.Name = "idorntext";
             this.idorntext.Size = new System.Drawing.Size(526, 50);
             this.idorntext.TabIndex = 11;
-            this.idorntext.Text = "Customs Special";
+            this.idorntext.Text = "Custom Games Balancer";
             this.idorntext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bScreen
+            // 
+            this.bScreen.BackColor = System.Drawing.Color.Transparent;
+            this.bScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bScreen.ForeColor = System.Drawing.Color.Black;
+            this.bScreen.Image = global::CustomBalancer.Properties.Resources.cam1;
+            this.bScreen.Location = new System.Drawing.Point(142, 352);
+            this.bScreen.Name = "bScreen";
+            this.bScreen.Size = new System.Drawing.Size(42, 42);
+            this.bScreen.TabIndex = 12;
+            this.bScreen.UseVisualStyleBackColor = false;
+            this.bScreen.Click += new System.EventHandler(this.bScreen_Click);
+            // 
+            // idornpic
+            // 
+            this.idornpic.Image = ((System.Drawing.Image)(resources.GetObject("idornpic.Image")));
+            this.idornpic.InitialImage = null;
+            this.idornpic.Location = new System.Drawing.Point(282, 69);
+            this.idornpic.Name = "idornpic";
+            this.idornpic.Size = new System.Drawing.Size(529, 215);
+            this.idornpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.idornpic.TabIndex = 10;
+            this.idornpic.TabStop = false;
             // 
             // Form1
             // 
@@ -536,18 +552,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(909, 399);
-            this.Controls.Add(this.gT2);
-            this.Controls.Add(this.gT1);
+            this.Controls.Add(this.idorntext);
             this.Controls.Add(this.idornpic);
+            this.Controls.Add(this.bScreen);
             this.Controls.Add(this.bBalance);
             this.Controls.Add(this.gPP);
-            this.Controls.Add(this.idorntext);
+            this.Controls.Add(this.gT2);
+            this.Controls.Add(this.gT1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoL Custom Games Balancer - iDorn Customs Special v1.01b";
+            this.Text = "LoL Custom Games Balancer - iDorn Customs Special v1.02b";
             this.gPP.ResumeLayout(false);
             this.gPP.PerformLayout();
             this.gT1.ResumeLayout(false);
@@ -622,6 +639,7 @@
         private System.Windows.Forms.PictureBox proft1p2;
         private System.Windows.Forms.PictureBox proft1p3;
         private System.Windows.Forms.PictureBox proft1p4;
+        private System.Windows.Forms.Button bScreen;
     }
 }
 

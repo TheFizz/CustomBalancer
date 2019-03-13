@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -222,14 +223,14 @@ namespace CustomBalancer
                 Player p = (Player)Players[i];
                 pool[i] = p.mmr;
             }
-            Array.Sort(pool); // сортируем по значениям в обратном порядке 
+            Array.Sort(pool); // backwards sort
             int sum = 0;
             foreach (int value in pool)
                 sum += value;
             float halfSum = sum / 2f;
 
-            int[] team1 = new int[5]; // исходный массив 
-            int[] team2 = new int[5]; // исходный массив 
+            int[] team1 = new int[5]; 
+            int[] team2 = new int[5]; 
             int sum1 = 0, sum2 = 0;
             int tcnt1 = 0, tcnt2 = 0;
             for (int i = 9; i >= 0; i--)
@@ -407,6 +408,7 @@ namespace CustomBalancer
                 bBalance.BackColor = Color.YellowGreen;
                 nameSearch.Enabled = false;
                 bAdd.Enabled = false;
+                bBalance.Focus();
             }
             nameSearch.SelectAll();
             nameSearch.Focus();
@@ -424,6 +426,7 @@ namespace CustomBalancer
                 bBalance.BackColor = SystemColors.Control;
                 nameSearch.Enabled = true;
                 bAdd.Enabled = true;
+                nameSearch.Focus();
             }
             if (playersList.SelectedIndex < Players.Count - 1)
             {
@@ -469,6 +472,7 @@ namespace CustomBalancer
                 bBalance.BackColor = Color.Gainsboro;
                 nameSearch.Enabled = true;
                 bAdd.Enabled = true;
+                nameSearch.Focus();
             }
         }
         private void bOPGG_Click(object sender, EventArgs e)
@@ -495,6 +499,21 @@ namespace CustomBalancer
                 bRemove.PerformClick();
             }
             return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private void bScreen_Click(object sender, EventArgs e)
+        {
+            using (var bmp = new Bitmap(gT1.Width + gT2.Width, gT1.Height))
+            {
+                String t1 = gT1.Text, t2 = gT2.Text;
+                gT1.Text = "";
+                gT2.Text = "";
+                gT1.DrawToBitmap(bmp, new Rectangle(0,0,gT1.Size.Width, gT1.Size.Height));
+                gT2.DrawToBitmap(bmp, new Rectangle(gT1.Size.Width, 0, gT2.Size.Width, gT2.Size.Height));
+                bmp.Save(@"SCR.png");
+                gT1.Text = t1;
+                gT2.Text = t2;
+            }
         }
 
     }
