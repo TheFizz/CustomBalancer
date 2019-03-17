@@ -1,16 +1,9 @@
 ﻿using HtmlAgilityPack;
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Imaging;
-using System.Linq;
 using System.Net;
 using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CustomBalancer
@@ -44,7 +37,15 @@ namespace CustomBalancer
             string srv = srvBox.SelectedValue.ToString();
             string link = "http://" + srv + ".op.gg/summoner/userName=" + name;
             string profilepic="";
-            string htmlCode = wc.DownloadString(link);
+            string htmlCode = "";
+            try
+            {
+                htmlCode = wc.DownloadString(link);
+            }
+            catch
+            {
+                MessageBox.Show("Can't reach OP.GG", "ERROR!"); return null;
+            }
             doc.LoadHtml(htmlCode);
             HtmlNode node = doc.DocumentNode.SelectSingleNode("/html/body/div[1]/div[4]/div/div/div[1]/div[3]/div[1]/span");
 
@@ -55,7 +56,7 @@ namespace CustomBalancer
                 node = doc.DocumentNode.SelectSingleNode("/html/body/div[1]/div[4]/div/div/div[1]/div[2]/div[1]/span");
                 try
                 { nickname = node.InnerText; }
-                catch { MessageBox.Show("Invalid summoner name, server or not existing on OP.GG1", "ERROR!"); return null; };
+                catch { MessageBox.Show("Invalid summoner name, server or not existing on OP.GG", "ERROR!"); return null; };
             }
 
             node = doc.DocumentNode.SelectSingleNode("//*[@id='SummonerLayoutContent']/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]");
@@ -68,7 +69,7 @@ namespace CustomBalancer
 
                 try
                 { rank = node.InnerText; }
-                catch { MessageBox.Show("Invalid summoner name, server or not existing on OP.GG2", "ERROR!"); return null; };
+                catch { MessageBox.Show("Invalid summoner name, server or not existing on OP.GG", "ERROR!"); return null; };
             }
 
             node = doc.DocumentNode.SelectSingleNode("/html/body/div[1]/div[4]/div/div/div[1]/div[2]/div/img");
@@ -81,7 +82,7 @@ namespace CustomBalancer
 
                 try
                 { profilepic = node.OuterHtml; }
-                catch { MessageBox.Show("Invalid summoner name, server or not existing on OP.GG3", "ERROR!"); return null; };
+                catch { MessageBox.Show("Invalid summoner name, server or not existing on OP.GG", "ERROR!"); return null; };
             }
 
             profilepic = profilepic.Substring(profilepic.IndexOf('"')+1);

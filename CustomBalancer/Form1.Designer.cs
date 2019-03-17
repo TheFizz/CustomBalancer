@@ -39,6 +39,30 @@
             this.srvBox = new System.Windows.Forms.ComboBox();
             this.bBalance = new System.Windows.Forms.Button();
             this.gT1 = new System.Windows.Forms.GroupBox();
+            this.t1p4 = new System.Windows.Forms.Label();
+            this.t1p3 = new System.Windows.Forms.Label();
+            this.t1p2 = new System.Windows.Forms.Label();
+            this.t1p1 = new System.Windows.Forms.Label();
+            this.t1p0 = new System.Windows.Forms.Label();
+            this.gT2 = new System.Windows.Forms.GroupBox();
+            this.t2p4 = new System.Windows.Forms.Label();
+            this.t2p3 = new System.Windows.Forms.Label();
+            this.t2p2 = new System.Windows.Forms.Label();
+            this.t2p1 = new System.Windows.Forms.Label();
+            this.t2p0 = new System.Windows.Forms.Label();
+            this.idorntext = new System.Windows.Forms.Label();
+            this.idornpic = new System.Windows.Forms.PictureBox();
+            this.bScreen = new System.Windows.Forms.Button();
+            this.proft2p0 = new System.Windows.Forms.PictureBox();
+            this.proft2p1 = new System.Windows.Forms.PictureBox();
+            this.proft2p2 = new System.Windows.Forms.PictureBox();
+            this.proft2p3 = new System.Windows.Forms.PictureBox();
+            this.proft2p4 = new System.Windows.Forms.PictureBox();
+            this.elot2p4 = new System.Windows.Forms.PictureBox();
+            this.elot2p3 = new System.Windows.Forms.PictureBox();
+            this.elot2p2 = new System.Windows.Forms.PictureBox();
+            this.elot2p1 = new System.Windows.Forms.PictureBox();
+            this.elot2p0 = new System.Windows.Forms.PictureBox();
             this.proft1p0 = new System.Windows.Forms.PictureBox();
             this.elot1p4 = new System.Windows.Forms.PictureBox();
             this.proft1p1 = new System.Windows.Forms.PictureBox();
@@ -49,43 +73,10 @@
             this.proft1p4 = new System.Windows.Forms.PictureBox();
             this.elot1p1 = new System.Windows.Forms.PictureBox();
             this.elot1p0 = new System.Windows.Forms.PictureBox();
-            this.t1p4 = new System.Windows.Forms.Label();
-            this.t1p3 = new System.Windows.Forms.Label();
-            this.t1p2 = new System.Windows.Forms.Label();
-            this.t1p1 = new System.Windows.Forms.Label();
-            this.t1p0 = new System.Windows.Forms.Label();
-            this.gT2 = new System.Windows.Forms.GroupBox();
-            this.proft2p0 = new System.Windows.Forms.PictureBox();
-            this.proft2p1 = new System.Windows.Forms.PictureBox();
-            this.proft2p2 = new System.Windows.Forms.PictureBox();
-            this.proft2p3 = new System.Windows.Forms.PictureBox();
-            this.proft2p4 = new System.Windows.Forms.PictureBox();
-            this.elot2p4 = new System.Windows.Forms.PictureBox();
-            this.t2p4 = new System.Windows.Forms.Label();
-            this.elot2p3 = new System.Windows.Forms.PictureBox();
-            this.t2p3 = new System.Windows.Forms.Label();
-            this.elot2p2 = new System.Windows.Forms.PictureBox();
-            this.elot2p1 = new System.Windows.Forms.PictureBox();
-            this.t2p2 = new System.Windows.Forms.Label();
-            this.elot2p0 = new System.Windows.Forms.PictureBox();
-            this.t2p1 = new System.Windows.Forms.Label();
-            this.t2p0 = new System.Windows.Forms.Label();
-            this.idorntext = new System.Windows.Forms.Label();
-            this.bScreen = new System.Windows.Forms.Button();
-            this.idornpic = new System.Windows.Forms.PictureBox();
             this.gPP.SuspendLayout();
             this.gT1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.proft1p0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.elot1p4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proft1p1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.elot1p3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proft1p2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proft1p3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.elot1p2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proft1p4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.elot1p1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.elot1p0)).BeginInit();
             this.gT2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.idornpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proft2p0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proft2p1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proft2p2)).BeginInit();
@@ -96,7 +87,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.elot2p2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot2p1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot2p0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.idornpic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elot1p4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elot1p3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elot1p2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elot1p1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elot1p0)).BeginInit();
             this.SuspendLayout();
             // 
             // playersList
@@ -221,86 +221,6 @@
             this.gT1.Text = "Team 1";
             this.gT1.Visible = false;
             // 
-            // proft1p0
-            // 
-            this.proft1p0.Location = new System.Drawing.Point(210, 17);
-            this.proft1p0.Name = "proft1p0";
-            this.proft1p0.Size = new System.Drawing.Size(64, 64);
-            this.proft1p0.TabIndex = 24;
-            this.proft1p0.TabStop = false;
-            // 
-            // elot1p4
-            // 
-            this.elot1p4.Location = new System.Drawing.Point(280, 297);
-            this.elot1p4.Name = "elot1p4";
-            this.elot1p4.Size = new System.Drawing.Size(64, 64);
-            this.elot1p4.TabIndex = 9;
-            this.elot1p4.TabStop = false;
-            // 
-            // proft1p1
-            // 
-            this.proft1p1.Location = new System.Drawing.Point(210, 87);
-            this.proft1p1.Name = "proft1p1";
-            this.proft1p1.Size = new System.Drawing.Size(64, 64);
-            this.proft1p1.TabIndex = 23;
-            this.proft1p1.TabStop = false;
-            // 
-            // elot1p3
-            // 
-            this.elot1p3.Location = new System.Drawing.Point(280, 227);
-            this.elot1p3.Name = "elot1p3";
-            this.elot1p3.Size = new System.Drawing.Size(64, 64);
-            this.elot1p3.TabIndex = 8;
-            this.elot1p3.TabStop = false;
-            // 
-            // proft1p2
-            // 
-            this.proft1p2.Location = new System.Drawing.Point(210, 157);
-            this.proft1p2.Name = "proft1p2";
-            this.proft1p2.Size = new System.Drawing.Size(64, 64);
-            this.proft1p2.TabIndex = 22;
-            this.proft1p2.TabStop = false;
-            // 
-            // proft1p3
-            // 
-            this.proft1p3.Location = new System.Drawing.Point(210, 227);
-            this.proft1p3.Name = "proft1p3";
-            this.proft1p3.Size = new System.Drawing.Size(64, 64);
-            this.proft1p3.TabIndex = 21;
-            this.proft1p3.TabStop = false;
-            // 
-            // elot1p2
-            // 
-            this.elot1p2.Location = new System.Drawing.Point(280, 157);
-            this.elot1p2.Name = "elot1p2";
-            this.elot1p2.Size = new System.Drawing.Size(64, 64);
-            this.elot1p2.TabIndex = 7;
-            this.elot1p2.TabStop = false;
-            // 
-            // proft1p4
-            // 
-            this.proft1p4.Location = new System.Drawing.Point(210, 297);
-            this.proft1p4.Name = "proft1p4";
-            this.proft1p4.Size = new System.Drawing.Size(64, 64);
-            this.proft1p4.TabIndex = 20;
-            this.proft1p4.TabStop = false;
-            // 
-            // elot1p1
-            // 
-            this.elot1p1.Location = new System.Drawing.Point(280, 87);
-            this.elot1p1.Name = "elot1p1";
-            this.elot1p1.Size = new System.Drawing.Size(64, 64);
-            this.elot1p1.TabIndex = 6;
-            this.elot1p1.TabStop = false;
-            // 
-            // elot1p0
-            // 
-            this.elot1p0.Location = new System.Drawing.Point(280, 17);
-            this.elot1p0.Name = "elot1p0";
-            this.elot1p0.Size = new System.Drawing.Size(64, 64);
-            this.elot1p0.TabIndex = 5;
-            this.elot1p0.TabStop = false;
-            // 
             // t1p4
             // 
             this.t1p4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -381,6 +301,91 @@
             this.gT2.Text = "Team 2";
             this.gT2.Visible = false;
             // 
+            // t2p4
+            // 
+            this.t2p4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t2p4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.t2p4.Location = new System.Drawing.Point(146, 296);
+            this.t2p4.Name = "t2p4";
+            this.t2p4.Size = new System.Drawing.Size(178, 64);
+            this.t2p4.TabIndex = 9;
+            this.t2p4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // t2p3
+            // 
+            this.t2p3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t2p3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.t2p3.Location = new System.Drawing.Point(146, 226);
+            this.t2p3.Name = "t2p3";
+            this.t2p3.Size = new System.Drawing.Size(178, 64);
+            this.t2p3.TabIndex = 8;
+            this.t2p3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // t2p2
+            // 
+            this.t2p2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t2p2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.t2p2.Location = new System.Drawing.Point(146, 162);
+            this.t2p2.Name = "t2p2";
+            this.t2p2.Size = new System.Drawing.Size(178, 64);
+            this.t2p2.TabIndex = 7;
+            this.t2p2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // t2p1
+            // 
+            this.t2p1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t2p1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.t2p1.Location = new System.Drawing.Point(146, 89);
+            this.t2p1.Name = "t2p1";
+            this.t2p1.Size = new System.Drawing.Size(178, 64);
+            this.t2p1.TabIndex = 6;
+            this.t2p1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // t2p0
+            // 
+            this.t2p0.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t2p0.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.t2p0.Location = new System.Drawing.Point(146, 15);
+            this.t2p0.Name = "t2p0";
+            this.t2p0.Size = new System.Drawing.Size(178, 65);
+            this.t2p0.TabIndex = 5;
+            this.t2p0.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // idorntext
+            // 
+            this.idorntext.Font = new System.Drawing.Font("Palatino Linotype", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.idorntext.ForeColor = System.Drawing.Color.DarkOrange;
+            this.idorntext.Location = new System.Drawing.Point(285, 282);
+            this.idorntext.Name = "idorntext";
+            this.idorntext.Size = new System.Drawing.Size(526, 50);
+            this.idorntext.TabIndex = 11;
+            this.idorntext.Text = "Custom Games Balancer";
+            this.idorntext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // idornpic
+            // 
+            this.idornpic.Image = ((System.Drawing.Image)(resources.GetObject("idornpic.Image")));
+            this.idornpic.InitialImage = null;
+            this.idornpic.Location = new System.Drawing.Point(282, 69);
+            this.idornpic.Name = "idornpic";
+            this.idornpic.Size = new System.Drawing.Size(529, 215);
+            this.idornpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.idornpic.TabIndex = 10;
+            this.idornpic.TabStop = false;
+            // 
+            // bScreen
+            // 
+            this.bScreen.BackColor = System.Drawing.Color.Transparent;
+            this.bScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bScreen.ForeColor = System.Drawing.Color.Black;
+            this.bScreen.Image = global::CustomBalancer.Properties.Resources.cam;
+            this.bScreen.Location = new System.Drawing.Point(142, 352);
+            this.bScreen.Name = "bScreen";
+            this.bScreen.Size = new System.Drawing.Size(42, 42);
+            this.bScreen.TabIndex = 12;
+            this.bScreen.UseVisualStyleBackColor = false;
+            this.bScreen.Click += new System.EventHandler(this.bScreen_Click);
+            // 
             // proft2p0
             // 
             this.proft2p0.Location = new System.Drawing.Point(76, 16);
@@ -429,16 +434,6 @@
             this.elot2p4.TabIndex = 14;
             this.elot2p4.TabStop = false;
             // 
-            // t2p4
-            // 
-            this.t2p4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t2p4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.t2p4.Location = new System.Drawing.Point(146, 296);
-            this.t2p4.Name = "t2p4";
-            this.t2p4.Size = new System.Drawing.Size(178, 64);
-            this.t2p4.TabIndex = 9;
-            this.t2p4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // elot2p3
             // 
             this.elot2p3.Location = new System.Drawing.Point(6, 226);
@@ -446,16 +441,6 @@
             this.elot2p3.Size = new System.Drawing.Size(64, 64);
             this.elot2p3.TabIndex = 13;
             this.elot2p3.TabStop = false;
-            // 
-            // t2p3
-            // 
-            this.t2p3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t2p3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.t2p3.Location = new System.Drawing.Point(146, 226);
-            this.t2p3.Name = "t2p3";
-            this.t2p3.Size = new System.Drawing.Size(178, 64);
-            this.t2p3.TabIndex = 8;
-            this.t2p3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // elot2p2
             // 
@@ -473,16 +458,6 @@
             this.elot2p1.TabIndex = 11;
             this.elot2p1.TabStop = false;
             // 
-            // t2p2
-            // 
-            this.t2p2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t2p2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.t2p2.Location = new System.Drawing.Point(146, 162);
-            this.t2p2.Name = "t2p2";
-            this.t2p2.Size = new System.Drawing.Size(178, 64);
-            this.t2p2.TabIndex = 7;
-            this.t2p2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // elot2p0
             // 
             this.elot2p0.Location = new System.Drawing.Point(6, 16);
@@ -491,60 +466,85 @@
             this.elot2p0.TabIndex = 10;
             this.elot2p0.TabStop = false;
             // 
-            // t2p1
+            // proft1p0
             // 
-            this.t2p1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t2p1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.t2p1.Location = new System.Drawing.Point(146, 89);
-            this.t2p1.Name = "t2p1";
-            this.t2p1.Size = new System.Drawing.Size(178, 64);
-            this.t2p1.TabIndex = 6;
-            this.t2p1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.proft1p0.Location = new System.Drawing.Point(210, 17);
+            this.proft1p0.Name = "proft1p0";
+            this.proft1p0.Size = new System.Drawing.Size(64, 64);
+            this.proft1p0.TabIndex = 24;
+            this.proft1p0.TabStop = false;
             // 
-            // t2p0
+            // elot1p4
             // 
-            this.t2p0.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t2p0.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.t2p0.Location = new System.Drawing.Point(146, 15);
-            this.t2p0.Name = "t2p0";
-            this.t2p0.Size = new System.Drawing.Size(178, 65);
-            this.t2p0.TabIndex = 5;
-            this.t2p0.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.elot1p4.Location = new System.Drawing.Point(280, 297);
+            this.elot1p4.Name = "elot1p4";
+            this.elot1p4.Size = new System.Drawing.Size(64, 64);
+            this.elot1p4.TabIndex = 9;
+            this.elot1p4.TabStop = false;
             // 
-            // idorntext
+            // proft1p1
             // 
-            this.idorntext.Font = new System.Drawing.Font("Palatino Linotype", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.idorntext.ForeColor = System.Drawing.Color.DarkOrange;
-            this.idorntext.Location = new System.Drawing.Point(285, 282);
-            this.idorntext.Name = "idorntext";
-            this.idorntext.Size = new System.Drawing.Size(526, 50);
-            this.idorntext.TabIndex = 11;
-            this.idorntext.Text = "Custom Games Balancer";
-            this.idorntext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.proft1p1.Location = new System.Drawing.Point(210, 87);
+            this.proft1p1.Name = "proft1p1";
+            this.proft1p1.Size = new System.Drawing.Size(64, 64);
+            this.proft1p1.TabIndex = 23;
+            this.proft1p1.TabStop = false;
             // 
-            // bScreen
+            // elot1p3
             // 
-            this.bScreen.BackColor = System.Drawing.Color.Transparent;
-            this.bScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.bScreen.ForeColor = System.Drawing.Color.Black;
-            this.bScreen.Image = global::CustomBalancer.Properties.Resources.cam1;
-            this.bScreen.Location = new System.Drawing.Point(142, 352);
-            this.bScreen.Name = "bScreen";
-            this.bScreen.Size = new System.Drawing.Size(42, 42);
-            this.bScreen.TabIndex = 12;
-            this.bScreen.UseVisualStyleBackColor = false;
-            this.bScreen.Click += new System.EventHandler(this.bScreen_Click);
+            this.elot1p3.Location = new System.Drawing.Point(280, 227);
+            this.elot1p3.Name = "elot1p3";
+            this.elot1p3.Size = new System.Drawing.Size(64, 64);
+            this.elot1p3.TabIndex = 8;
+            this.elot1p3.TabStop = false;
             // 
-            // idornpic
+            // proft1p2
             // 
-            this.idornpic.Image = ((System.Drawing.Image)(resources.GetObject("idornpic.Image")));
-            this.idornpic.InitialImage = null;
-            this.idornpic.Location = new System.Drawing.Point(282, 69);
-            this.idornpic.Name = "idornpic";
-            this.idornpic.Size = new System.Drawing.Size(529, 215);
-            this.idornpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.idornpic.TabIndex = 10;
-            this.idornpic.TabStop = false;
+            this.proft1p2.Location = new System.Drawing.Point(210, 157);
+            this.proft1p2.Name = "proft1p2";
+            this.proft1p2.Size = new System.Drawing.Size(64, 64);
+            this.proft1p2.TabIndex = 22;
+            this.proft1p2.TabStop = false;
+            // 
+            // proft1p3
+            // 
+            this.proft1p3.Location = new System.Drawing.Point(210, 227);
+            this.proft1p3.Name = "proft1p3";
+            this.proft1p3.Size = new System.Drawing.Size(64, 64);
+            this.proft1p3.TabIndex = 21;
+            this.proft1p3.TabStop = false;
+            // 
+            // elot1p2
+            // 
+            this.elot1p2.Location = new System.Drawing.Point(280, 157);
+            this.elot1p2.Name = "elot1p2";
+            this.elot1p2.Size = new System.Drawing.Size(64, 64);
+            this.elot1p2.TabIndex = 7;
+            this.elot1p2.TabStop = false;
+            // 
+            // proft1p4
+            // 
+            this.proft1p4.Location = new System.Drawing.Point(210, 297);
+            this.proft1p4.Name = "proft1p4";
+            this.proft1p4.Size = new System.Drawing.Size(64, 64);
+            this.proft1p4.TabIndex = 20;
+            this.proft1p4.TabStop = false;
+            // 
+            // elot1p1
+            // 
+            this.elot1p1.Location = new System.Drawing.Point(280, 87);
+            this.elot1p1.Name = "elot1p1";
+            this.elot1p1.Size = new System.Drawing.Size(64, 64);
+            this.elot1p1.TabIndex = 6;
+            this.elot1p1.TabStop = false;
+            // 
+            // elot1p0
+            // 
+            this.elot1p0.Location = new System.Drawing.Point(280, 17);
+            this.elot1p0.Name = "elot1p0";
+            this.elot1p0.Size = new System.Drawing.Size(64, 64);
+            this.elot1p0.TabIndex = 5;
+            this.elot1p0.TabStop = false;
             // 
             // Form1
             // 
@@ -564,21 +564,12 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoL Custom Games Balancer - iDorn Customs Special v1.02b";
+            this.Text = "LoL Custom Games Balancer v1.03b";
             this.gPP.ResumeLayout(false);
             this.gPP.PerformLayout();
             this.gT1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.proft1p0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.elot1p4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proft1p1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.elot1p3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proft1p2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proft1p3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.elot1p2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proft1p4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.elot1p1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.elot1p0)).EndInit();
             this.gT2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.idornpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proft2p0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proft2p1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proft2p2)).EndInit();
@@ -589,7 +580,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.elot2p2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot2p1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elot2p0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.idornpic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elot1p4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elot1p3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elot1p2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proft1p4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elot1p1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elot1p0)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -31,9 +31,9 @@ D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.Form
 D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.Properties.Resources.resources
 D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.csproj.GenerateResource.cache
 D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.csproj.CoreCompileInputs.cache
-D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\bin\Release\LoL Custom Games Balancer v1.02b.exe.config
-D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\bin\Release\LoL Custom Games Balancer v1.02b.exe
-D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\bin\Release\LoL Custom Games Balancer v1.02b.pdb
 D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\obj\Release\CustomBalancer.csprojAssemblyReference.cache
-D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\obj\Release\LoL Custom Games Balancer v1.02b.exe
-D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\obj\Release\LoL Custom Games Balancer v1.02b.pdb
+D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\bin\Release\LoL Custom Games Balancer v1.03b.exe.config
+D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\bin\Release\LoL Custom Games Balancer v1.03b.exe
+D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\bin\Release\LoL Custom Games Balancer v1.03b.pdb
+D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\obj\Release\LoL Custom Games Balancer v1.03b.exe
+D:\Prog\BalancerCS\CustomBalancer\CustomBalancer\obj\Release\LoL Custom Games Balancer v1.03b.pdb
