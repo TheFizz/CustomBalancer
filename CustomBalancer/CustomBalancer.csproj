@@ -7,7 +7,7 @@
     <ProjectGuid>{F0A82A79-FD20-4D05-B083-78B9E0AFB8F8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CustomBalancer</RootNamespace>
-    <AssemblyName>LoL Custom Games Balancer v1.03b</AssemblyName>
+    <AssemblyName>LoL Custom Games Balancer v1.04b</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
