@@ -564,7 +564,8 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoL Custom Games Balancer v1.04b";
+            this.Text = "LoL Custom Games Balancer v1.05b";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.gPP.ResumeLayout(false);
             this.gPP.PerformLayout();
             this.gT1.ResumeLayout(false);
