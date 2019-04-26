@@ -1,5 +1,3 @@
-# League of Legends Custom Games Balancer (a.k.a LCGB)
+OP.GG powered version is dicontinued.
 
-[Download and VirusTotal links are here](https://github.com/TheFizz/LCGB/releases)
-
-![](scr.jpg)
+Please proceed to https://github.com/TheFizz/LCGB-RAPI to get a native Riot API powered one.
